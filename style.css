@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+
+:root {
+    --orange-color: #ff751a;
+    --white-color: #fff;
+    --dark-color: #000;
+    --grey-color: #D5D2D2;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.orange-size{
+    background: var(--orange-color);
+    min-width: 100vw;
+    height: 100vh;
+}
+
+.white-size{
+    background: var(--white-color);
+    min-width: 100vw;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+.menu {
+    position:fixed;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white-color);
+    border-bottom: 0.1rem solid var(--grey-color);
+    flex-wrap: wrap;
+
+}
+
+a {
+    text-decoration: none;
+    color:var(--orange-color);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.spacing {
+    height: 4.5rem;
+}
+
+.main-start {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.main-start img {
+    height:auto;
+    width: auto;
+}    
+
+
+.main-description {
+    color: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+}
+
+.contact {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-spacing {
+    text-align: center;
+}
+
+.contact label{
+    display: block;
+}
+
+.contact input {
+    margin: 1rem;
+    width: 50%;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif; 
+}
+
+
+.contact textarea {
+    margin: 1rem;
+    width: 50%;
+    height: 20rem;
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif; 
+}
+
+
+.contact-spacing {
+    width: 100%;
+}
+
+button {
+    background-color: var(--white-color);
+    color: var(--orange-color);
+    width: 20rem;
+    height: 5rem;
+    border: 0.1rem solid var(--dark-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.enviado {
+    font-size: 1rem;
+}
+
+.footer-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--white-color);
+}
+
+.footer-size img {
+    margin: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#close-menu {
+    display: none;
+}
+
+
+@media (max-width: 730px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .main-start img {
+        display: none;
+    }
+
+    .white-size {
+        width: auto;
+        height: auto;
+    }
+
+    .orange-size {
+        width: auto;
+        height: auto;
+    }
+
+    .main-start {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contact input {
+        font-size: 1rem;
+    }
+
+    .contact textarea {
+        font-size: 1rem;
+    }
+
+    .menu {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu nav ul {
+        margin: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu {
+        display:none;
+    }
+
+    .close-menu-label::after {
+        content:'☰';
+        position: fixed;
+        z-index: 1;
+        top: 2rem;
+        right:2rem;
+        background: var(--orange-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height:3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        }
+
+        #close-menu:checked~.menu {
+            display: flex;
+        }
+
+        #close-menu:checked~.close-menu-label::after {
+            content: '×'
+        }
+
+        .spacing {
+            display: none;
+        }
+
+        .main-description {
+            gap: 3rem;
+        }
+
+        .contact form button {
+            margin-bottom: 1rem; 
+        }
+
+
+
+}
+
+
+
+

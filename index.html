@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input id="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu">
+        <h2 onclick="getElementById('close-menu').checked = false"> <a href="#inicio">Início</a></h2>
+        <nav>
+            <ul onclick="getElementById('close-menu').checked = false">
+                <li><a href="#sobre-porque">Sobre nós</a></li>
+                <li><a href="#sobre-porque">Porque nos escolher</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="spacing"></div>
+
+    <section class="main-start orange-size" id="inicio">
+        <div>
+            <h1>GL Construções</h1>
+            <p>Há 17 anos construindo os melhores edifícios para você!</p>
+        </div>
+        <img src="/img/plano-da-construção-civil.png" alt="Imagem sobre construção">
+    </section>
+
+    <section class="white-size main-description" id="sobre-porque" >
+        <div>
+            <h1>Sobre nós</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus molestiae voluptates earum
+                laborum debitis, quaerat officia at suscipit, ipsa ducimus reprehenderit quod ullam vel quam. Harum
+                obcaecati autem aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptatem
+                fuga possimus ex quaerat. Error eum placeat quaerat similique maiores corrupti quae ex, itaque,
+                mollitia, consequuntur eos ea molestiae nam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia magnam iste porro recusandae itaque quod rem, adipisci cum repellat fugiat quia a perferendis ad
+                illum iure numquam deserunt. Libero, sunt?</p>
+        </div>
+        <div>
+        <h1>Porque nos escolher</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi, iste, voluptatum ipsum quibusdam,
+            sit illum maiores officiis tempora inventore rerum. Enim debitis quas iste reprehenderit soluta. Quos,
+            necessitatibus nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias tempora debitis
+            mollitia ratione saepe culpa consequatur maiores, esse non! Laboriosam aut nostrum alias fugiat velit omnis
+            officia accusamus perferendis quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+            voluptatibus expedita ea assumenda perferendis facilis. Dolores provident nihil rem optio iusto accusamus?
+            Blanditiis laborum id velit quibusdam! Explicabo, fugit?</p>
+        </div>
+    </section>
+    <section class="contact orange-size" id="contato">
+        <div class="contact-spacing">
+        <div class="text-contact">
+        <h1>Fale conosco</h1>
+        <form action="#" class="formulario">
+            <div>
+            <input type="text" name="nome" id="nome" placeholder="seu nome">
+        </div>
+        <div class="contact-spacing">
+            <input type="text" name="email" id="email" placeholder="seu email">
+
+        </div>
+        <div class="contact-spacing">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="sua Mensagem"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        </form>
+        <div>
+    </div>
+    </div>
+</div>
+<div class="enviado"></div>
+    </section>
+
+    <footer class="footer-size">
+        <a href="#"><img src="/img/png-transparent-logo-business-honeybrains-university-of-northern-colorado-design-text-orange-logo.png" class='logo do instagram' alt=""></a>
+        <a href="#"><img src="/img/download.png" alt="logo do whatsapp" srcset=""></a>
+        <a href="#"><img src="/img/png-transparent-social-media-computer-icons-logo-facebook-advertising-social-media-white-text-orange.png" alt=" logo do facebook" srcset=""></a>
+        
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
