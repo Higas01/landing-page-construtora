@@ -277,8 +277,19 @@ button:hover {
             margin-bottom: 1rem; 
         }
 
+        
+}
 
+@media (max-width: 1110px) {
+    .orange-size {
+        width: auto;
+        height: auto;
+    }
 
+    .white-size {
+        width: auto;
+        height: auto;
+    }
 }
 
 
