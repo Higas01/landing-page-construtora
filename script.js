@@ -3,13 +3,12 @@ function meuEscopo() {
     formulario.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        message('Enviado com sucesso!');
+    const enviado = document.querySelector('.enviado');
+    enviado.innerHTML = `<p>Enviado com Sucesso!</p>`        
+
     })
 
-    function message (msg) {
-        const enviado = document.querySelector('.enviado');
-        enviado.innerHTML = `<p>${msg}</p>`;
-    }
+
 }
 
 meuEscopo();
